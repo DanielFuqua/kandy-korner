@@ -19,7 +19,7 @@ export const ProductProvider = (props) => {
   };
 
   const addProduct = (product) => {
-    return fetch("http://localhost:8088/product", {
+    return fetch("http://localhost:8088/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
