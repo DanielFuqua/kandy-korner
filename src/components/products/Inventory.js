@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { ProductContext } from "./ProductProvider";
 import Product from "./Product";
 import { ProductTypeContext } from "./ProductTypeProvider";
+import "./Products.css";
 
 export default () => {
   const { products } = useContext(ProductContext);
