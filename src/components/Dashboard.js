@@ -7,6 +7,8 @@ import { ProductTypeProvider } from "./products/ProductTypeProvider";
 import { EmployeeProvider } from "./employees/EmployeeProvider";
 import EmployeeList from "./employees/EmployeeList";
 import "./KandyKorner.css";
+import { KustomerKandyProvider } from "./purchases/KustomerKandyProvider";
+import MyOrderButton from "./purchases/MyOrderButton";
 
 export default () => (
   <>
@@ -14,10 +16,13 @@ export default () => (
       <LocationProvider>
         <ProductProvider>
           <ProductTypeProvider>
-            <h1>The Kandy Korner</h1>
-            <LocationList />
-            <Inventory />
-            <EmployeeList />
+            <KustomerKandyProvider>
+              <h1>The Kandy Korner</h1>
+              <MyOrderButton />
+              <LocationList />
+              <Inventory />
+              <EmployeeList />
+            </KustomerKandyProvider>
           </ProductTypeProvider>
         </ProductProvider>
       </LocationProvider>
